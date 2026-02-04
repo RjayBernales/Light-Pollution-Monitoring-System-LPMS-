@@ -158,4 +158,18 @@ html, body {
 .card h5, .card h6 {
     font-size: 0.95rem;
 }
+.kpis {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+.kpi {
+    padding: 8px;
+    font-size: 0.85rem;
+}  
+.kpi .label {
+    font-size: 0.7rem;
+}  
+.kpi .value {
+    font-size: 0.95rem;
+} 
 }
