@@ -194,4 +194,7 @@ canvas {
 .top-row {
     gap: 8px;
 }
+#map {
+    min-height: 250px;
+}
 }
