@@ -29,3 +29,9 @@ const colored = L.tileLayer(
   "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
   { maxZoom: 19 }
 );
+// Alternative Satellite Basemap Layer gamit ESRI
+const satellite = L.tileLayer(
+  "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  { maxZoom: 19 }
+);
+colored.addTo(map);
