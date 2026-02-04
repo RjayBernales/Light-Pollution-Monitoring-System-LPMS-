@@ -124,3 +124,9 @@ html, body {
     font-size:1.1rem; 
     letter-spacing:.3px; 
 }
+/* Responsive Design for mobile */
+@media (max-width: 768px) {
+.header {
+    padding: 10px 12px;
+}
+}
