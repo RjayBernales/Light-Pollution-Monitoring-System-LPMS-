@@ -66,3 +66,9 @@ html, body {
     border-radius: var(--radius);
     box-shadow: 0 4px 14px rgba(0,0,0,0.06);
 }
+.card h5, .card h6 { 
+    margin: 0 0 6px 0;
+}
+.card.p-3 { 
+    padding: 14px !important; 
+}
