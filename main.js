@@ -35,3 +35,13 @@ const satellite = L.tileLayer(
   { maxZoom: 19 }
 );
 colored.addTo(map);
+
+// Control Layer para sa maps (CartoDB Voyager | ESRI Satellite)
+L.control.layers(
+  {
+    "Colored Map": colored,
+    "Satellite View": satellite
+  },
+  null,
+  { position: "bottomright" }
+).addTo(map);
