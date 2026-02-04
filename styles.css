@@ -39,3 +39,9 @@ html, body {
     box-sizing: border-box;
     overflow-y: auto;
 }
+.top-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 14px;
+    height: 100%;
+}
