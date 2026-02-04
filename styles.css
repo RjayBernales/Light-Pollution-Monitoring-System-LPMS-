@@ -137,4 +137,13 @@ html, body {
     width: 8px;
     height: 8px;
 }
+#app {
+    gap: 10px;
+    padding: 10px;
+    height: calc(100vh - 50px);
+}
+.top-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
 }
