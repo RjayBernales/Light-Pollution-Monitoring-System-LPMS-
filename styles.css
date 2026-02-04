@@ -207,4 +207,21 @@ canvas {
     font-size: 0.85rem;
     margin-bottom: 4px;
 }
+.kpis {
+    grid-template-columns: 1fr;
+    gap: 6px;
+}
+.kpi {
+    padding: 6px;
+    gap: 2px;
+}
+.kpi .label {
+    font-size: 0.65rem;
+}
+.kpi .value {
+    font-size: 0.85rem;
+}
+canvas {
+    max-height: 120px !important;
+}
 }
