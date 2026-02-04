@@ -3,6 +3,28 @@
     --stroke: rgba(0,0,0,0.08);
     --radius: 10px; 
 }
+
+/*Animation(Recycled) test*/
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 html, body {
     font-family: 'Outfit', sans-serif;
     height:100%;
@@ -22,7 +44,7 @@ html, body {
     align-items:center; 
     gap:20px; 
     font-weight:600; 
-    font-size:1.5rem;
+    font-size:1.4rem;
     margin-top: .5rem;
     letter-spacing:.3px; 
 }
@@ -100,4 +122,5 @@ html, body {
 .kpi .value { 
     font-weight:700; 
     font-size:1.1rem; 
-    letter-spacing:.3px; }
+    letter-spacing:.3px; 
+}
