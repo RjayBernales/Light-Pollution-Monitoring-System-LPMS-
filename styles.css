@@ -1,0 +1,18 @@
+
+:root {
+    --stroke: rgba(0,0,0,0.08);
+    --radius: 10px; 
+}
+html, body {
+    height:100%;
+    margin:0;
+    background:#f7f7fb;
+    color:#212529; 
+}
+.header {
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between; 
+    padding:12px 16px; 
+    border-bottom:1px solid var(--stroke); background:#ffffff; 
+}
