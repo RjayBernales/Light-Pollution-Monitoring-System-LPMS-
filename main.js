@@ -10,11 +10,13 @@ const CAMPUS_BOUNDS = L.latLngBounds(
 //Leaflet ni for map initialization v2 (naanay panning )
 const map = L.map("map", {
   center: CAMPUS_CENTER,
-  zoom: 17,
+  zoom: 18,
   minZoom: 16,
-  maxZoom: 19,
+  maxZoom: 30,
   maxBounds: CAMPUS_BOUNDS,
-  maxBoundsViscosity: 1.0 
+  maxBoundsViscosity: 1.0,
+  rotate: true,
+  bearing: 50 // rotate LEFT by 30 degrees
 });
 
 // Para ma mark ang border around campus since walay way para campus lang makita
@@ -26,9 +28,10 @@ L.rectangle(CAMPUS_BOUNDS, {
 
 // Basemap layer gamitCartoDB Voyager
 const colored = L.tileLayer(
-  "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+  "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
   { maxZoom: 19 }
 );
+
 // Alternative Satellite Basemap Layer gamit ESRI
 const satellite = L.tileLayer(
   "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
