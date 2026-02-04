@@ -176,3 +176,10 @@ canvas {
     max-height: 150px !important;
 }
 }
+
+/* Responsive design para sa small cp */
+@media (max-width: 480px) {
+.header {
+    padding: 8px 10px;
+}
+}
