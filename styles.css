@@ -182,4 +182,16 @@ canvas {
 .header {
     padding: 8px 10px;
 }
+.brand {
+    gap: 8px;
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+}
+#app {
+    gap: 8px;
+    padding: 8px;
+}
+.top-row {
+    gap: 8px;
+}
 }
