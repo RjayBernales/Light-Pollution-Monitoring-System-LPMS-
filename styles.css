@@ -149,4 +149,13 @@ html, body {
 #map {
     min-height: 300px;
 }
+.card-stack {
+    gap: 10px;
+}   
+.card.p-3 {
+    padding: 10px !important;
+} 
+.card h5, .card h6 {
+    font-size: 0.95rem;
+}
 }
