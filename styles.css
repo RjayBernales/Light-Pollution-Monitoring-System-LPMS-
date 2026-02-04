@@ -172,4 +172,7 @@ html, body {
 .kpi .value {
     font-size: 0.95rem;
 } 
+canvas {
+    max-height: 150px !important;
+}
 }
