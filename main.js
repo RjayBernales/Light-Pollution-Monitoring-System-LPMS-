@@ -16,15 +16,6 @@ const map = L.map("map", {
   maxBounds: CAMPUS_BOUNDS,
   maxBoundsViscosity: 1.0 
 });
-// Satellite view test if ok
-L.tileLayer(
-  "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-  {
-    attribution: "Tiles &copy; Esri",
-    maxZoom: 19
-  }
-).addTo(map);
-
 
 // Para ma mark ang border around campus since walay way para campus lang makita
 L.rectangle(CAMPUS_BOUNDS, {
@@ -32,3 +23,9 @@ L.rectangle(CAMPUS_BOUNDS, {
   weight: 2,
   fillOpacity: 0.05
 }).addTo(map).bindPopup("Northern Bukidnon State College");
+
+// Basemap layer gamitCartoDB Voyager
+const colored = L.tileLayer(
+  "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+  { maxZoom: 19 }
+);
