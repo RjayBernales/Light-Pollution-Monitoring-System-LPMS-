@@ -147,6 +147,6 @@ html, body {
     gap: 10px;
 }
 #map {
-    min-height: 500px;
+    min-height: 300px;
 }
 }
