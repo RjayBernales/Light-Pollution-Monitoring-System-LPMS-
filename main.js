@@ -16,7 +16,6 @@ const map = L.map("map", {
   maxBounds: CAMPUS_BOUNDS,
   maxBoundsViscosity: 1.0,
   rotate: true,
-  bearing: 50 // rotate LEFT by 30 degrees
 });
 
 // Para ma mark ang border around campus since walay way para campus lang makita
@@ -37,7 +36,7 @@ const satellite = L.tileLayer(
   "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
   { maxZoom: 19 }
 );
-colored.addTo(map);
+satellite.addTo(map);
 
 // Control Layer para sa maps (CartoDB Voyager | ESRI Satellite)
 L.control.layers(
