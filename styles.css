@@ -29,3 +29,13 @@ html, body {
     border-radius:50%; 
     background:#0d6efd; 
 }
+
+#app {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 14px;
+    height: calc(100vh - 58px);
+    padding: 14px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
