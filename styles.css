@@ -197,4 +197,14 @@ canvas {
 #map {
     min-height: 250px;
 }
+.card-stack {
+   gap: 8px;
+}
+.card.p-3 {
+    padding: 8px !important;
+}
+.card h5, .card h6 {
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+}
 }
